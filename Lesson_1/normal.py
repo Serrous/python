@@ -15,7 +15,9 @@
 
 my_value = int(input('Введи число '))
 
-while my_value <0 or my_value> 10:
-    int(input('Попробуй еще раз '))
+while my_value not in range (1, 9):
+    my_value=int(input('Неверное число'))
 else:
-    print('Молодец! Число: ', my_value)
+    my_value= my_value ** 2
+    print(my_value)
+
